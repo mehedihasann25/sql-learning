@@ -1,19 +1,8 @@
--- =============================================
--- TABLE MANAGEMENT: ALTER TABLE & CONSTRAINTS
--- PostgreSQL Practice
--- =============================================
-
-
--- View all data
 SELECT *
 FROM admission_info;
 
-
--- =============================================
--- UPDATE: Modify existing data
--- =============================================
-
 -- Update a specific row by name
+
 UPDATE admission_info
 SET age = 35
 WHERE name = 'Shihab';
@@ -42,7 +31,7 @@ ORDER BY user_id ASC;
 
 -- =============================================
 -- ALTER TABLE: Modify table structure
--- =============================================
+
 
 -- Rename a column
 ALTER TABLE admission_info
@@ -67,7 +56,6 @@ ADD CONSTRAINT age CHECK (age >= 18);
 
 -- =============================================
 -- INSERT: Test the new constraint
--- =============================================
 
 -- This insert works because age = 18 satisfies the constraint
 INSERT INTO admission_info (user_id, full_name, gmail, age)
@@ -76,7 +64,6 @@ VALUES (8, 'Pracir', 'pracir@gmail.com', 18);
 
 -- =============================================
 -- RENAME TABLE
--- =============================================
 
 ALTER TABLE admission_info
 RENAME TO admission;
