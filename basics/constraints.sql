@@ -1,6 +1,3 @@
--- Topic: Constraints (NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY)
--- Date: May 2026
-
 CREATE TABLE admission_info(
     user_id  INT PRIMARY KEY,
     name     VARCHAR(50),
@@ -15,6 +12,6 @@ VALUES
     (2, 'Shihab',  'shihab@gmail.com',24),
     (3, 'Saimoon', 'smcg@gmail.com',25);
 
--- Note: age=16 দিলে CHECK constraint fail হবে → error আসবে
--- Note: same gmail দুইবার দিলে UNIQUE constraint fail → error
--- Note: reg_date manually না দিলে auto current time বসে যাবে
+-- Note: age=16 দিলে CHECK constraint fail হবে → error আসবে 
+-- same gmail দুইবার দিলে UNIQUE constraint fail → error
+-- reg_date manually না দিলে auto current time বসে যাবে
