@@ -1,10 +1,5 @@
--- Topic: CREATE TABLE, INSERT, DELETE, DROP
--- Date: May 2026
-
--- Database তৈরি
 CREATE DATABASE employee;
 
--- Table তৈরি (SERIAL = auto increment)
 CREATE TABLE employee(
     employee_id SERIAL PRIMARY KEY,
     name        VARCHAR(100) NOT NULL,
